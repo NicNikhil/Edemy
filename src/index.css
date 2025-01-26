@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+*{
+    font-family: Outfit;
+}
+
+.course-details-heading-large {
+    font-size: 36px 44px;  /* Aapka desired font size */
+    font-weight: 600;  /* Optional */
+  }
+  
+  .course-heading-small {
+    font-size: 26px 36px;  /* Aapka desired font size */
+  }
