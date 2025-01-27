@@ -13,12 +13,12 @@ if (!PUBLISHABLE_KEY) {
 }
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/Edemy">
   <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl='/'>
   <AppContextProvider>
     <App />
    </AppContextProvider>
   </ClerkProvider>
-  </BrowserRouter>,
+  </BrowserRouter>
  
 )

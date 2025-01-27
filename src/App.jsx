@@ -15,13 +15,16 @@ import StudentEnrolled from './pages/educator/StudentEnrolled'
 import Navbar from './components/student/Navbar'
 
 
+
 const App = () => {
   const isEducatorRoute = useMatch('/educator/*')
 
   return (
+    
     <div className='text-default min-h-screen bg-white'>
 
      {!isEducatorRoute && <Navbar /> }
+     
       <Routes>
         <Route path='/'element={<Home />} />
         <Route path='/course-list' element={<CourseList />} />
@@ -37,6 +40,7 @@ const App = () => {
           <Route path='student-enrolled' element={<StudentEnrolled />} />
         </Route>
       </Routes>
+      
     </div>
   ) 
 }
